@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="UTF-8">
-        <title>Loading...</title>
-        <link rel="icon" type="image/png" href="home/assets/images/2024.png"/>
-        <link id="shared-css" rel="stylesheet" href="home/assets/css/shared.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Startseite » Zyneon</title>
+        <link rel="icon" type="image/png" href="assets/zyneon/img/logo/32.png">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="assets/zyneon/css/shared.css">
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     </head>
-    <body bgcolor="#050713">
-        <script>
-            function getBrowserLanguage() {
-                const browserLanguage = navigator.language || navigator.userLanguage;
-                if(browserLanguage.toLowerCase().startsWith("de")) {
-                    window.location.href = "de"
-                } else {
-                    window.location.href = "en"
-                }
-            }
-            window.onload = getBrowserLanguage;
-        </script>
+    <body data-bs-theme="dark">
+        <div id="menu"></div>
+        <div id="header" style="background-image: url('assets/zyneon/img/wallpapers/space-red-planet.png');">
+            
+        </div>
+        <div id="context-menu"></div>
+        <div id="notification-center"></div>
+        <div id="footer-de">
+            <div class="container-fluid p-4 bg-black text-center">
+                <a href="https://www.nerofy.de/rechtliches" target="_blank">Impressum & Datenschutzerklärung</a> <br>
+                ©copyright <a href="https://www.nerofy.de/" target="_blank">Nerofy Netzwerk</a>. Alle Rechte vorbehalten.
+            </div>
+        </div>
+        <script src="assets/popper/dist/umd/popper.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/zyneon/js/shared.js"></script>
+        <script src="https://nerofy.de/assets/javascript/footer.js"></script>
     </body>
 </html>
