@@ -16,9 +16,10 @@ body {
         background-position: center;
 
         .card {
-            backdrop-filter: blur(12px);
+            transition: all 0.25s ease;
+            backdrop-filter: blur(64px);
             background: #00000025;
-            text-shadow: 0 0 0.2rem black;
+            text-shadow: 0 0 0.3rem black;
 
             .card-header {
                 background: #00000005;
@@ -26,8 +27,36 @@ body {
             }
 
             .btn {
+                transition: all 0.1s ease;
                 text-shadow: none;
             }
+
+            .btn-primary {
+                background: rgba(89, 213, 255, 0.19);
+                color: white;
+                border: 1px solid var(--bs-border-color-translucent);
+                text-shadow: 0 0 1px deepskyblue;
+            }
+
+            .btn-primary:hover {
+                background: rgba(89, 213, 255, 0.47);
+            }
+
+            .btn-outline-light {
+                background: #ffffff20;
+                border: 1px solid #ffffff90;
+                text-shadow: 0 0 1px #ffffff50;
+            }
+
+            .btn-outline-light:hover {
+                background: #ffffff70;
+                border: 1px solid white;
+                color: white;
+            }
+        }
+
+        .card:hover {
+            background: #00000030;
         }
     }
 
