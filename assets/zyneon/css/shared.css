@@ -14,6 +14,21 @@ body {
         justify-content: center;
         background-size: cover;
         background-position: center;
+
+        .card {
+            backdrop-filter: blur(12px);
+            background: #00000025;
+            text-shadow: 0 0 0.2rem black;
+
+            .card-header {
+                background: #00000005;
+                font-size: 1.25rem;
+            }
+
+            .btn {
+                text-shadow: none;
+            }
+        }
     }
 
     #menu {
