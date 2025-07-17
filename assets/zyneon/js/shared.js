@@ -132,8 +132,8 @@ if(urlParams.has("_ijt")) {
     if(ds) {
 
         if(document.getElementById("context-menu")) {
-            ds.innerHTML += "<a type='button' class='btn btn-danger' onclick=\"this.remove(); document.getElementById('context-menu').remove();\">Remove context menu</a>";
+            ds.innerHTML += "<button class='button-red' onclick=\"this.remove(); document.getElementById('context-menu').remove();\">Remove context menu</button>";
         }
-        ds.innerHTML +="<a type='button' class='btn btn-outline-light' onclick='location.reload();'>Reload page</a>";
+        ds.innerHTML +="<button onclick='location.reload();'>Reload page</button>";
     }
 }

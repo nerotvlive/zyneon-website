@@ -180,6 +180,10 @@ body {
         background: #00000020;
     }
 
+    .button-red {
+        background: rgba(246, 67, 67, 0.47);
+    }
+
     .button:hover, button:hover {
         cursor: pointer;
         background: #ffffff30;
@@ -191,6 +195,10 @@ body {
 
     .button-primary:hover {
         background: #8543f680;
+    }
+
+    .button-red:hover {
+        background: rgba(246, 67, 67, 0.6);
     }
 
     .button-secondary:hover {
