@@ -81,6 +81,8 @@ body {
 
         .card {
             width: 100%;
+            background: var(--bs-dark-bg-subtle);
+            text-shadow: none;
 
             .card-header {
                 span {
