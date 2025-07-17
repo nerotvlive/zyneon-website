@@ -2,6 +2,17 @@ const urlParams = new URLSearchParams(window.location.search);
 let contextTarget = null;
 let storage = false;
 
+let path = location.pathname.replaceAll("/zyneon-website","");
+if(path === "" || path === "/") {
+
+} else if(!path.endsWith(".html")) {
+    if(path.endsWith("/")) {
+        path = path + "index.html"
+    } else {
+        path = path + ".html"
+    }
+}
+
 addEventListener("DOMContentLoaded", (event) => {
     if(localStorage.getItem("enabled")) {
         if(localStorage.getItem("enabled")==="true") {
@@ -47,7 +58,7 @@ addEventListener("contextmenu", (event) => {
             }
         }
         contextMenu.innerHTML += "<li><hr class=\"dropdown-divider\"></li>";
-        contextMenu.innerHTML += "<li><a class='dropdown-item' href='https://github.com/danieldieeins/zyneon-website/' target='_blank'><i class=\"bi bi-github\"></i> Quelltext anzeigen</a></li>";
+        contextMenu.innerHTML += "<li><a class='dropdown-item' href='https://github.com/danieldieeins/zyneon-website/blob/main"+path+"' target='_blank'><i class=\"bi bi-github\"></i> Quelltext anzeigen</a></li>";
 
         let y = event.clientY;
         let x = event.clientX;
