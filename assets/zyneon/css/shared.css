@@ -25,34 +25,6 @@ body {
                 background: #00000005;
                 font-size: 1.25rem;
             }
-
-            .btn {
-                transition: all 0.1s ease;
-                text-shadow: none;
-            }
-
-            .btn-primary {
-                background: rgba(89, 213, 255, 0.19);
-                color: white;
-                border: 1px solid var(--bs-border-color-translucent);
-                text-shadow: 0 0 1px deepskyblue;
-            }
-
-            .btn-primary:hover {
-                background: rgba(89, 213, 255, 0.47);
-            }
-
-            .btn-outline-light {
-                background: #ffffff20;
-                border: 1px solid #ffffff90;
-                text-shadow: 0 0 1px #ffffff50;
-            }
-
-            .btn-outline-light:hover {
-                background: #ffffff70;
-                border: 1px solid white;
-                color: white;
-            }
         }
 
         .card:hover {
@@ -178,5 +150,50 @@ body {
         opacity: 1;
         z-index: 9999;
         display: flex;
+    }
+
+    .btn, .button, button {
+        text-shadow: none;
+    }
+
+    .button, button {
+        background: #ffffff25;
+        color: #e4e4e4;
+
+        margin: 0 0.4rem 0.4rem 0;
+        padding: 0.5rem 1rem;
+
+        border: 1px solid var(--bs-border-color-translucent);
+        border-radius: var(--bs-border-radius);
+
+        text-decoration: none;
+
+        box-shadow: 0.2rem 0.2rem 0.4rem #00000050;
+        transition: all 0.1s ease;
+    }
+
+    .button-primary {
+        background: #8543f650;
+    }
+
+    .button-secondary {
+        background: #00000020;
+    }
+
+    .button:hover, button:hover {
+        cursor: pointer;
+        background: #ffffff30;
+        border: 1px var(--bs-border-color-translucent) solid;
+        box-shadow: 0.2rem 0.2rem 0.4rem #00000035;
+        color: white;
+        transition: all 0.25s ease;
+    }
+
+    .button-primary:hover {
+        background: #8543f680;
+    }
+
+    .button-secondary:hover {
+        background: #00000010;
     }
 }
