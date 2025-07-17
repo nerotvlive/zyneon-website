@@ -20,7 +20,7 @@ addEventListener("DOMContentLoaded", (event) => {
         }
     }
     if(!storage) {
-        addNotification("cookie-alert","Möchtet du Cookies aktivieren?","Cookies helfen uns dabei, diese Website mit mehr Funktionalität auszustatten und dir ein besseres Webangebot zu bieten. Schaue in der Datenschutzerklärung für weitere Infos. <span class='text-bg-info'>Wenn nicht, schließe diese Nachricht einfach mit dem X.</span><br><br><button onclick='localStorage.setItem(\"enabled\",\"true\"); location.reload();' class='button-primary'>Cookies aktivieren</button> <a href='https://www.nerofy.de/rechtliches' target='_blank'><button>Datenschutzerklärung</button></a>")
+        addNotification("cookie-alert","Möchtet du Cookies aktivieren?","Cookies helfen uns dabei, diese Website mit mehr Funktionalität auszustatten und dir ein besseres Webangebot zu bieten. Schaue in der Datenschutzerklärung für weitere Infos.<br><span class='text-bg-purple'>Wenn nicht, schließe diese Nachricht einfach mit dem X</span><br><br><button onclick='localStorage.setItem(\"enabled\",\"true\"); location.reload();' class='button-primary'>Cookies aktivieren</button> <a href='https://www.nerofy.de/rechtliches' target='_blank'><button>Datenschutzerklärung</button></a>")
     }
     initMenu();
 });
