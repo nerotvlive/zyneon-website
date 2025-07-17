@@ -4,6 +4,22 @@
 
 body {
 
+    .card {
+        transition: all 0.25s ease;
+        backdrop-filter: blur(64px);
+        background: #00000025;
+        text-shadow: 0 0 0.3rem black;
+
+        .card-header {
+            background: #00000005;
+            font-size: 1.25rem;
+        }
+    }
+
+    .card:hover {
+        background: #00000030;
+    }
+
     #header {
         padding: 0;
         margin: 0;
@@ -14,22 +30,6 @@ body {
         justify-content: center;
         background-size: cover;
         background-position: center;
-
-        .card {
-            transition: all 0.25s ease;
-            backdrop-filter: blur(64px);
-            background: #00000025;
-            text-shadow: 0 0 0.3rem black;
-
-            .card-header {
-                background: #00000005;
-                font-size: 1.25rem;
-            }
-        }
-
-        .card:hover {
-            background: #00000030;
-        }
     }
 
     #menu {
