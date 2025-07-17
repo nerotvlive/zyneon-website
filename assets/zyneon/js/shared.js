@@ -4,7 +4,7 @@ let storage = false;
 
 let path = location.pathname.replaceAll("/zyneon-website","");
 if(path === "" || path === "/") {
-
+    path = "/index.html"
 } else if(!path.endsWith(".html")) {
     if(path.endsWith("/")) {
         path = path + "index.html"
