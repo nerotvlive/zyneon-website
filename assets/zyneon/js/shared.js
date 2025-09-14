@@ -13,6 +13,10 @@ if(path === "" || path === "/") {
     }
 }
 
+if(window.location.href.includes("zyneon.de")) {
+    window.location.href=window.location.href.replaceAll("zyneon.de","zyneon.net");
+}
+
 addEventListener("DOMContentLoaded", (event) => {
     if(localStorage.getItem("enabled")) {
         if(localStorage.getItem("enabled")==="true") {
